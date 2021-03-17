@@ -1,0 +1,6 @@
+
+☐ probar la vista no de miblog sino la de blog, osea la de  127.0.0.1:8000
+la vista de inicio es de 127.0.0.1:8000/miblog
+
+☐ hacer las rutas para las vistas y los templates, 
+☐ hacer la logica que necesite

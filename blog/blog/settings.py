@@ -37,7 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'miblog.apps.MiblogConfig', #install miblog
+    'ckeditor', #la dependencia
 ]
+#configuracion de ckeditor
+CKEDITOR_CONFIGS = { #la dependencia de ckeditor para el texto
+    'default': {
+        'toolbar': 'full',
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,8 +86,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'blog',
         'USER': 'postgres',
-        'PASSWORD': '1234',
-        
+        'PASSWORD': '1234', #hell yeah
+
     }
 }
 
