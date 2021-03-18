@@ -3,4 +3,4 @@
 la vista de inicio es de 127.0.0.1:8000/miblog
 
 ☐ hacer las rutas para las vistas y los templates, 
-☐ hacer la logica que necesite
+☐ agregar categorias desde admin, y llamarlas en index.html con jinja2 con un for
