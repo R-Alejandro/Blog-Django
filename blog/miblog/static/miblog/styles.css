@@ -24,3 +24,17 @@ a:link, a:visited, a:active{
 .navbar{
     background-color: rgb(43, 54, 58);
 }
+
+.sld{
+    height: 160px; 
+    background-color: rgb(43, 54, 58);
+}
+
+.sld .container #miform{
+    margin: auto;
+    width: 40%;
+} 
+
+.blogs{
+    background-color: rgb(15, 15, 15);
+}
