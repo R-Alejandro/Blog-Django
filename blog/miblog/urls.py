@@ -5,4 +5,6 @@ from . import views
 app_name = 'miblog'
 urlpatterns = [
     path('', views.index, name='index'),
+    path('programacion', views.programacion, name='prog'),
+    path('pixelart', views.pixelart, name='pixel'),
 ]

@@ -2,7 +2,7 @@ a {
     color: rgb(255, 255, 255);
     padding: 10px 30px;
     /*border: 2px solid rgb(61, 196, 236);*/
-    margin: 5px 20px 5px 40px;
+    margin: 5px 20px 5px 5px;
     display: inline-block;
     /*text-transform: uppercase;*/
     letter-spacing: 2px;
@@ -34,7 +34,3 @@ a:link, a:visited, a:active{
     margin: auto;
     width: 40%;
 } 
-
-.blogs{
-    background-color: rgb(15, 15, 15);
-}
