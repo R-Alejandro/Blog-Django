@@ -9,7 +9,7 @@ class CategoriaAdmin(admin.ModelAdmin):
 
 class PostAdmin(admin.ModelAdmin):
     search_fields = ['titulo','fecha_creacion','autor_nombre']
-    list_display = ('titulo','fecha_creacion','autor_nombre')
+    list_display = ('titulo','fecha_creacion','autor_nombre',)
 
 admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Post, PostAdmin)
