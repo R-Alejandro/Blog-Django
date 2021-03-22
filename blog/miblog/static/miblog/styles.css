@@ -26,11 +26,44 @@ a:link, a:visited, a:active{
 }
 
 .sld{
-    height: 160px; 
-    background-color: rgb(43, 54, 58);
+    min-height: 40vh; 
+    background-image: url("img/u.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+.sld::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 106px;
+    left: 0;
+}
+
+.sld h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    margin: 100px 90px 0 100px;
+    background-color: rgb(228, 35, 61);
 }
 
 .sld .container #miform{
     margin: auto;
     width: 40%;
 } 
+
+.tituloRef{
+    color: rgb(43, 23, 23);
+    padding: 10px 30px;
+    /*border: 2px solid rgb(61, 196, 236);*/
+    margin: 5px 20px 5px 5px;
+    /*text-transform: uppercase;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.tituloRef:link, .tituloRef:visited, .tituloRef:active{
+    text-decoration: none;
+}

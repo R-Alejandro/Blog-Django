@@ -37,23 +37,20 @@
     <!--start home section-->
     <div class="sld">
       <div class="container">
-        <br> <br>
-        <div class="col align-self-center" id="miform">
-          <form action="" class="form-inline">
-            <div class="form-group mx-sm-3">
-              <input type="text" class="form-control" placeholder="Buscar un Blog">
-            </div>
-            <button type="submit" class="btn btn-success">Buscar</button>
-          </form>
+        <div class="row">
+          <div class="col-sm-8">
+            {% block banner %}{% endblock %}
+          </div>
         </div>
       </div>
     </div>
     <!--display blogs-->
-    <div class="blogs">
-      <div class="container">
-        <br> <br>
-        <h1>dfdf</h1>
-        {% block blogs%}{% endblock %}
+    <div class="container">
+      <br> <br>
+      <div class="row">
+        <div class="col">
+          {% block blogs%}{% endblock %}
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -6,7 +6,9 @@ def index(request):
     return render(request, 'miblog/index.html', )
 
 def programacion(request):
-    return render(request, 'miblog/index.html', {'categorias': 1})
+    posts = Post.objects.filter(categoria_id_id=1)
+    return render(request, 'miblog/prog.html', {'posts': posts})
 
 def pixelart(request):
-    return render(request, 'miblog/index.html', {'categorias': 2})
+    posts = Post.objects.all()
+    return render(request, 'miblog/pixel.html', {'posts': posts})
