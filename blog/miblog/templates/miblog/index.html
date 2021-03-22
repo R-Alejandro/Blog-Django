@@ -1,8 +1,27 @@
 {% extends 'miblog/base.html' %}
 {% block title %} Blog {% endblock %}
-
+{% block banner %} 
+<h2> Blog Developer </h2>
+{% endblock %}
 {% block blogs%}
-{% if categorias %}
-    {{categorias}}
-{% endif %}
+<div class="row">
+    <div class="col">
+      <h1>Bienvenido a mi Blog :D</h1>
+      <p>Hola visitante, soy Santiago, escritor de este blog, aqui podras encontrar
+        algunas de mis aficiones, sientete libre de navegar en el :)
+      </p>
+    </div>
+    <div class="col-md-auto align-self-center">
+      <div class="card" style="width: 18rem;">
+        {% load static %}
+        <img class="card-img-top" src="{% static 'miblog/img/t.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Santiago Rozo</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Estudiante de Ingenieria de Sistemas</h6>
+          <p class="card-text">Entusiasta de la Programación, el Pixel Art, los juegos Shooter, y poco mas...</p>
+          <a href="#" class="btn btn-primary">Mas sobre mi</a>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

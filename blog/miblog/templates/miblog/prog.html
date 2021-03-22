@@ -1,0 +1,25 @@
+{% extends 'miblog/base.html' %}
+{% block title %} Programacion {% endblock %}
+{% block banner %} 
+<h2> Programación </h2>
+{% endblock %}
+{% block blogs%}
+{% if posts %}
+<div class="row">
+    {% for pos in posts %}
+    <div class="col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="{{pos.imagen}}">
+            <div class="card-body">
+            <h4 class="card-title"><a class="tituloRef" href="{% url 'miblog:'%}">{{pos.titulo}}</a></h4>
+            <h6 class="card-subtitle mb-2 text-muted">Categoria Programacion</h6>
+            <p class="card-text">Escrito por {{pos.autor_nombre}} el {{pos.fecha_creacion}} </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+    <h3>No avaliable posts in this category :(</h3>
+{% endif %}
+{% endblock %}
