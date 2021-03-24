@@ -1,10 +1,10 @@
 {% extends 'miblog/base.html' %}
-{% block title %} {{titulo}} {% endblock %}
+{% block title %} {{banner}} {% endblock %}
 {% block banner %} 
-<h2> {{titulo}} </h2>
+<h2> {{banner}} </h2>
 {% endblock %}
 {% block blogs%}
-{% if posts %}
+{% if post %}
 <div class="row">
     {% for pos in posts %}
     <div class="col-sm-6">
@@ -20,6 +20,6 @@
     {% endfor %}
 </div>
 {% else %}
-    <h3>No avaliable posts in this category :(</h3>
+    <h3>Post is not avaliable right now</h3>
 {% endif %}
 {% endblock %}
