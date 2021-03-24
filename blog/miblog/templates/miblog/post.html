@@ -1,0 +1,27 @@
+{% extends 'miblog/base.html' %}
+{% block title %} {{banner}} {% endblock %}
+{% block banner %} 
+<h2> {{banner}} </h2>
+{% endblock %}
+{% block blogs%}
+{% if post %}
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="card">
+            <img class="card-img-top" style="height: 17rem;" src="{{post.imagen}}">
+            <div class="card-body">
+            <h1 class="card-title">{{post.titulo}}</h1>
+            <h6 class="card-subtitle mb-2 text-muted">Categoria {{banner}}</h6> <br>
+            <p class="card-text">{{ post.texto | safe }}</p> <br>
+            <p class="card-text">Escrito por {{post.autor_nombre}} el {{post.fecha_creacion}} </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+{% else %}
+    <h3>Post is not avaliable right now</h3>
+{% endif %}
+{% endblock %}
