@@ -1,5 +1,5 @@
 {% extends 'miblog/base.html' %}
-{% block title %} {{titulo}} {% endblock %}
+{% block title %} {{titulo}}  {% endblock %}
 {% block banner %} 
 <h2> {{titulo}} </h2>
 {% endblock %}
@@ -9,10 +9,10 @@
     {% for pos in posts %}
     <div class="col-sm-6">
         <div class="card">
-            <img class="card-img-top" src="{{pos.imagen}}">
+            <img class="card-img-top" style="height: 17rem;" src="{{pos.imagen}}">
             <div class="card-body">
             <h4 class="card-title"><a class="tituloRef" href="{% url 'miblog:post' pos.id %}">{{pos.titulo}}</a></h4>
-            <h6 class="card-subtitle mb-2 text-muted">Categoria Programacion</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Categoria {{titulo}}</h6>
             <p class="card-text">Escrito por {{pos.autor_nombre}} el {{pos.fecha_creacion}} </p>
             </div>
         </div>

@@ -6,5 +6,5 @@ la vista de inicio es de 127.0.0.1:8000/miblog
 ✘ agregar categorias desde admin, y llamarlas en index.html con jinja2 con un for @cancelled (21/3/2021 7:02:53)
 
 ✔ mostrar la informacion de los post donde corresponde cada categoria @done (21/3/2021 21:21:31)
-☐ mostrar el post individual cuando se seleccione para esto:
+✔ mostrar el post individual cuando se seleccione para esto: @done (24/3/2021 0:00:23)
 {% url 'miblog:post' pos.id %}

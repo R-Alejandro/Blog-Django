@@ -5,19 +5,21 @@
 {% endblock %}
 {% block blogs%}
 {% if post %}
+
 <div class="row">
-    {% for pos in posts %}
-    <div class="col-sm-6">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
         <div class="card">
-            <img class="card-img-top" src="{{pos.imagen}}">
+            <img class="card-img-top" style="height: 17rem;" src="{{post.imagen}}">
             <div class="card-body">
-            <h4 class="card-title"><a class="tituloRef" href="{% url 'miblog:post' pos.id %}">{{pos.titulo}}</a></h4>
-            <h6 class="card-subtitle mb-2 text-muted">Categoria Programacion</h6>
-            <p class="card-text">Escrito por {{pos.autor_nombre}} el {{pos.fecha_creacion}} </p>
+            <h1 class="card-title">{{post.titulo}}</h1>
+            <h6 class="card-subtitle mb-2 text-muted">Categoria {{banner}}</h6> <br>
+            <p class="card-text">{{ post.texto | safe }}</p> <br>
+            <p class="card-text">Escrito por {{post.autor_nombre}} el {{post.fecha_creacion}} </p>
             </div>
         </div>
     </div>
-    {% endfor %}
+    <div class="col-sm-1"></div>
 </div>
 {% else %}
     <h3>Post is not avaliable right now</h3>
