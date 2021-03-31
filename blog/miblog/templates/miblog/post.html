@@ -25,3 +25,5 @@
     <h3>Post is not avaliable right now</h3>
 {% endif %}
 {% endblock %}
+
+{% block msgpost %}<a class="btn btn-dark float-left" href="{% url 'miblog:prog' post.categoria_id_id %}">Todos los Posts</a>{% endblock %}

@@ -6,7 +6,7 @@
 {% block blogs%}
 {% if posts %}
 <div class="row">
-    {% for pos in posts %}
+    {% for pos in pg_obj %}
     <div class="col-sm-6">
         <div class="card">
             <img class="card-img-top" style="height: 17rem;" src="{{pos.imagen}}">
@@ -17,9 +17,20 @@
             </div>
         </div>
     </div>
-    {% endfor %}
+    {% endfor %}   
 </div>
 {% else %}
     <h3>No avaliable posts in this category :(</h3>
 {% endif %}
 {% endblock %}
+
+
+{% block msgpost %}
+{% if pg_obj.has_previous%}
+<a class="btn btn-dark float-left" href="?page=pg_obj.previous_page_number">&laquo; Anterior</a>
+{% endif %}
+{% if pg_obj.has_next %}
+<a class="btn btn-dark float-right" href="?page={{pg_obj.next_page_number}}">Mas Posts &rarr;</a>
+{% endif %}
+{% endblock %}
+
