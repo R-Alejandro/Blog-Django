@@ -27,7 +27,7 @@
 
 {% block msgpost %}
 {% if pg_obj.has_previous%}
-<a class="btn btn-dark float-left" href="?page=pg_obj.previous_page_number">&laquo; Anterior</a>
+<a class="btn btn-dark float-left" href="?page={{pg_obj.previous_page_number}}">&laquo; Anterior</a>
 {% endif %}
 {% if pg_obj.has_next %}
 <a class="btn btn-dark float-right" href="?page={{pg_obj.next_page_number}}">Mas Posts &rarr;</a>

@@ -8,4 +8,4 @@ la vista de inicio es de 127.0.0.1:8000/miblog
 ✔ mostrar la informacion de los post donde corresponde cada categoria @done (21/3/2021 21:21:31)
 ✔ mostrar el post individual cuando se seleccione para esto: @done (24/3/2021 0:00:23)
 
-☐ hacer paginacion en las categorias
+✔ hacer paginacion en las categorias @done (30/3/2021 21:05:33)

@@ -7,8 +7,9 @@ def index(request):
     return render(request, 'miblog/index.html')
 
 def programacion(request, cat_id):
-    posts = Post.objects.filter(categoria_id_id=cat_id) 
-    paginator = Paginator(posts, 1) #numero de objetos por pagina
+    posts = Post.objects.filter(categoria_id_id=cat_id)
+    posts = posts.order_by('-fecha_creacion')
+    paginator = Paginator(posts, 2) #numero de objetos por pagina
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
